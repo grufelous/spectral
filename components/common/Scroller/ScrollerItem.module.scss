@@ -1,0 +1,9 @@
+.itemContainer {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  border: 1px dotted #000;
+  scroll-snap-align: start;
+}
