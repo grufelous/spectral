@@ -1,15 +1,17 @@
 import styles from './ScrollerItem.module.scss';
 
 type ScrollerItemProps = {
-  styleProps: {
+  styleProps?: {
     backgroundColor: string;
   };
+  isFullHeight: boolean;
+  children?: JSX.Element | JSX.Element[];
 };
 
-const ScrollerItem = ({ styleProps }: ScrollerItemProps): JSX.Element => {
+const ScrollerItem = ({ styleProps, isFullHeight, children }: ScrollerItemProps): JSX.Element => {
   return (
-    <div className={styles.itemContainer} style={styleProps}>
-      {styleProps.backgroundColor}
+    <div className={`${styles.itemContainer} ${isFullHeight ? styles.fullHeight : null}`} style={styleProps}>
+      {children}
     </div>
   );
 };

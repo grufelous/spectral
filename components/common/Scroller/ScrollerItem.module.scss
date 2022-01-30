@@ -1,9 +1,10 @@
 .itemContainer {
-  height: 100vh;
+  height: 10vh;
   display: flex;
-  align-items: center;
-  text-align: center;
-  color: #fff;
-  border: 1px dotted #000;
+  flex-direction: column;
   scroll-snap-align: start;
+}
+
+.fullHeight {
+  height: 100vh;
 }
