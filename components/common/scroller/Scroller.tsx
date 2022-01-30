@@ -2,7 +2,7 @@ import { ScrollerItem } from './ScrollerItem';
 import styles from './Scroller.module.scss';
 import titleStyles from './Title.module.scss';
 
-const Scroller = ({}): React.ReactElement => {
+const Scroller = (): React.ReactElement => {
   const colors = [
     '#001219ff',
     '#005f73ff',
